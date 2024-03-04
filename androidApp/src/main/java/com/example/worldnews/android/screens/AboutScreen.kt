@@ -1,8 +1,7 @@
-package com.example.worldnews.android
+package com.example.worldnews.android.screens
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -41,7 +40,7 @@ private fun ContentView(){
     LazyColumn(
         modifier = Modifier.fillMaxSize()
     ){
-        items(items){row -> RowView(title =row.first, subtitle = row.second)}
+        items(items){row -> RowView(title =row.first, subtitle = row.second) }
     }
 }
 
